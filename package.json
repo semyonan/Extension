@@ -1,0 +1,25 @@
+{
+    "name": "pascal-ext",
+    "displayName": "Pascal Extension",
+    "description": "Extension for pascal ",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pascal",
+            "aliases": ["Pascal", "pascal"],
+            "extensions": [".pas",".p",".pp",".dfm",".fmx",".dpr",".dpk",".lfm",".lpr"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pascal",
+            "scopeName": "source.pascal",
+            "path": "./syntaxes/pascal.tmLanguage"
+        }]
+    }
+}
