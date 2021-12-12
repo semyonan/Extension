@@ -1,0 +1,115 @@
+{
+  "Begin end": {
+  "prefix": "begin",
+  "body": [
+    "begin",
+    "\t$0",
+    "end;"
+  ],
+  "description": "Begin end"
+  },
+  
+  "else end": {
+  "prefix": "else",
+  "body": [
+    "else",
+    "begin",
+    "\t$0",
+    "end;"
+  ],
+  "description": "else end"
+  },
+  
+  "for begin end": {
+  "prefix": "forb",
+  "body": [
+    "for ${1:i} := ${2:0} to ${3:max} do",
+    "begin",
+    "\t$0",
+    "end;"
+  ],
+  "description": "for begin end"
+  },
+  
+  "for in end": {
+  "prefix": "forin",
+  "body": [
+    "for ${1:MyElem} in ${2:MyList} do",
+    "begin",
+    "\t$0",
+    "end;"
+  ],
+  "description": "for in end"
+  },
+  
+  "for downto": {
+  "prefix": "forr",
+  "body": [
+    "for ${1:i} := ${2:max} downto ${3:0} do",
+    "begin",
+    "\t$0",
+    "end;"
+  ],
+  "description": "for downto"
+  },
+  
+  "function end": {
+  "prefix": "function",
+  "body": [
+    "function ${1:MyFunction}(${2:params}):${3:integer};",
+    "begin",
+    "\t$0",
+    "end;"
+  ],
+  "description": "function end"
+  },
+  
+  "if (no begin end)": {
+  "prefix": "if",
+  "body": [
+    "if ${1:True} then",
+    "\t$0"
+  ],
+  "description": "if (no begin end)"
+  },
+  
+  "if else (no begin end)": {
+  "prefix": "ife",
+  "body": [
+    "if ${1:True} then",
+    "\t${2:then code here}",
+    "else",
+    "\t${3:else code here}"
+  ],
+  "description": "if else (no begin end)"
+  },
+  
+  "procedure": {
+  "prefix": "procedure",
+  "body": [
+    "procedure ${1:MyProcedure}(${2:params});",
+    "begin",
+    "\t$0",
+    "end;"
+  ],
+  "description": "procedure"
+  },
+  
+  "repeat until": {
+  "prefix": "repeat",
+  "body": [
+    "repeat",
+    "\t$0",
+    "until (${1:True});"
+  ],
+  "description": "repeat until"
+  },
+  
+  "variable": {
+  "prefix": "var",
+  "body": [
+    "${1:variable}: ${2:type};$0"
+  ],
+  "description": "variable"
+  }
+}

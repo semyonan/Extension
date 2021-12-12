@@ -16,6 +16,10 @@
             "extensions": [".pas",".p",".pp",".dfm",".fmx",".dpr",".dpk",".lfm",".lpr"],
             "configuration": "./language-configuration.json"
         }],
+        "snippets": [{
+            "language": "pascal",
+            "path": "./snippets/pascal.json"
+        }],
         "grammars": [{
             "language": "pascal",
             "scopeName": "source.pascal",
