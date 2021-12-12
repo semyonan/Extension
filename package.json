@@ -7,8 +7,16 @@
         "vscode": "^1.63.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets",
+        "Other"
     ],
+    "activationEvents": [
+        "onLanguage:pascal",
+        "onCommand:pascal-ext.ToUppercase",
+        "onCommand:pascal-ext.ToLowercase"
+	],
+    "main": "./extension.js",
     "contributes": {
         "languages": [{
             "id": "pascal",
@@ -24,6 +32,15 @@
             "language": "pascal",
             "scopeName": "source.pascal",
             "path": "./syntaxes/pascal.tmLanguage"
-        }]
+        }],
+        "commands": [{
+            "command": "pascal-ext.toUppercase",
+            "title": "Pascal Extention: To Uppercase"
+        },
+        {
+            "command": "pascal-ext.toLowercase",
+            "title": "Pascal Extension: To Lowercase"
+        }
+        ]
     }
 }
